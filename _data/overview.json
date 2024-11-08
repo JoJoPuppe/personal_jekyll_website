@@ -1,0 +1,30 @@
+{
+    "profile": {
+        "id": 1121566,
+        "sso_id": true,
+        "name": "jojopuppe",
+        "system_owns": 38,
+        "user_owns": 39,
+        "user_bloods": 0,
+        "system_bloods": 0,
+        "team": null,
+        "respects": 0,
+        "rank": "Hacker",
+        "rank_id": 3,
+        "current_rank_progress": 0,
+        "next_rank": "Pro Hacker",
+        "next_rank_points": 0.6795,
+        "rank_ownership": 1.51,
+        "rank_requirement": 20,
+        "ranking": 896,
+        "avatar": "/storage/avatars/1756dfe2baef71546d20e8a4e8d98702.png",
+        "timezone": "Europe/Berlin",
+        "points": 0,
+        "country_name": "Germany",
+        "country_code": "DE",
+        "university_name": null,
+        "github": null,
+        "linkedin": null,
+        "twitter": null
+    }
+}

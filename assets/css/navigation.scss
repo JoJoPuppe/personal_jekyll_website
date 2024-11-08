@@ -1,0 +1,136 @@
+a {
+  color: #000;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+nav {
+  background-color: #faf;
+  // box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+nav li a {
+  display: block;
+  padding: 10px 10px;
+  background-color: #fe44ca;
+  border-right: 1px solid #f4f4f4;
+  // text-decoration: none;
+}
+
+nav li a:hover,
+nav .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+nav .logo {
+  display: block;
+  float: left;
+  font-size: 1.5em;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #0affca
+}
+
+/* menu */
+
+nav .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+nav .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+nav .menu-icon .nav-icon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+nav .menu-icon .nav-icon:before,
+nav .menu-icon .nav-icon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+nav .menu-icon .nav-icon:before {
+  top: 5px;
+}
+
+nav .menu-icon .nav-icon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+nav .menu-btn {
+  display: none;
+}
+
+nav .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+nav .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+nav .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top:0;
+}
+
+nav .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top:0;
+}
+
+
+/* 48em = 768px @ 16pt font */
+
+@media (min-width: 36em) {
+  nav li {
+    float: left;
+  }
+  nav li a {
+    padding: 20px 30px;
+  }
+  nav .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  nav .menu-icon {
+    display: none;
+  }
+}

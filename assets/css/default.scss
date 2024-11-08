@@ -1,0 +1,238 @@
+body {
+  background-color: #10072D;
+  color: #FFD6C2;
+}
+
+.content_container {
+  width: 100%;
+}
+
+mark {
+  background-color: yellow;
+}
+
+.content {
+  width: 800px;
+  min-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: fit-content;
+  padding: 60px 10px 10px 10px;
+}
+
+img {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+h1 {
+  font-family: "Martian Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: -2px;
+  font-size: 2.5em;
+  border-bottom: 2px solid #223;
+  padding-bottom: 15px;
+  font-variation-settings:
+    "wdth" 87.5;
+}
+
+h2 {
+  font-family: "Martian Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  border-bottom: 4px solid #F613C5;
+  font-variation-settings:
+    "wdth" 87.5;
+}
+
+a {
+  color: #371FEA;
+}
+
+p {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  font-style: normal;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+strong {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.2em;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-style: normal;
+  color: #C04CFD;
+}
+
+em {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.2em;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-style: italic;
+  color: #FC6DAB;
+}
+
+strong > em {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.2em;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-style: italic;
+  color: #C04CFD;
+}
+
+p > code {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-style: normal;
+  color: #DB7E1B;
+  background-color: #223;
+  padding: 4px 8px 4px 8px;
+}
+
+.highlight {
+  padding: 0px 5px 0px 5px;
+  font-size: 1.1em;
+  overflow: auto;
+}
+
+
+:root {
+  /* Callout Colors */
+  --callout-color: 0, 123, 255; /* Default to Bootstrap's primary blue (RGB) */
+  --callout-border-opacity: 1;
+
+  /* Callout Dimensions */
+  --callout-border-width: 1px;
+  --callout-radius: 4px;
+  --callout-padding: 1rem;
+
+  /* Callout Title */
+  --callout-title-padding: 0.5rem 1rem;
+  --callout-title-size: 1.25rem;
+  --callout-title-weight: 600;
+  --callout-title-color: inherit;
+
+  /* Callout Content */
+  --callout-content-padding: 0.5rem 1rem;
+  --callout-content-background: transparent;
+
+  /* Miscellaneous */
+  --callout-blend-mode: normal;
+  --cursor: pointer;
+  --size-4-1: 0.5rem; /* For gap */
+  --line-height-tight: 1.2;
+}
+
+/* Info Callout */
+.callout--info {
+  --callout-color: 0, 123, 255; /* Blue */
+}
+
+/* Success Callout */
+.callout--success {
+  --callout-color: 40, 167, 69; /* Green */
+}
+
+/* Warning Callout */
+.callout--warning {
+  --callout-color: 255, 193, 7; /* Yellow */
+}
+
+
+.callout {
+  overflow: hidden;
+  border-style: solid;
+  border-color: rgba(var(--callout-color), var(--callout-border-opacity));
+  border-width: var(--callout-border-width);
+  border-radius: var(--callout-radius);
+  margin: 1em 0;
+  mix-blend-mode: var(--callout-blend-mode);
+  background-color: rgba(var(--callout-color), 0.1);
+  padding: var(--callout-padding);
+}
+.callout.is-collapsible .callout-title {
+  cursor: var(--cursor);
+}
+.callout-title {
+  padding: var(--callout-title-padding);
+  display: flex;
+  gap: var(--size-4-1);
+  font-size: var(--callout-title-size);
+  color: rgb(var(--callout-color));
+  line-height: var(--line-height-tight);
+  align-items: flex-start;
+}
+.callout-content {
+  overflow-x: auto;
+  padding: var(--callout-content-padding);
+  background-color: var(--callout-content-background);
+}
+.callout-content .callout {
+  margin-top: 20px;
+}
+.callout-icon {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+.callout-icon .svg-icon {
+  color: rgb(var(--callout-color));
+}
+.callout-icon::after {
+  content: "\200B";
+}
+.callout-title-inner {
+  --font-weight: var(--callout-title-weight);
+  font-weight: var(--font-weight);
+  color: var(--callout-title-color);
+}
+
+
+.card {
+  padding: 15px;
+  border-bottom: 1px solid #aa9;
+  display: flex;
+  align-items: center;
+
+}
+
+.card-emoji {
+  font-size: 2em;
+  padding-right: 15px;
+}
+
+.card-title {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 900;
+  color: #877;
+  font-size: 0.7em;
+}
+
+.card-content {
+  font-weight: 900;
+}
+
+
+.progressbar-container {
+  background-color: black;
+  padding: 3px;
+}
+
+.progressbar-container>div {
+  text-align: center;
+  background-color: orange;
+  width: 0%;
+  height: 20px;
+}

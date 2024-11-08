@@ -1,0 +1,4 @@
+<!-- _includes/glightbox-image.html -->
+<a href="{{ include.href }}" class="glightbox" data-title="{{ include.title | default: '' }}">
+    <img src="{{ include.img_src | default: include.href }}" alt="{{ include.alt | default: '' }}" />
+</a>
