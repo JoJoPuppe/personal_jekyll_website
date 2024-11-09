@@ -1,10 +1,8 @@
 <div class="card">
-    <div class="card-emoji">{{ include.emoji }}</div>
-    <div class="card-data">
-        <div class="card-title">{{ include.title }}</div>
-        <div class="card-content">
+    <span class="card-emoji">{{ include.emoji }}</span>
+        ~/{{ include.title }}<span style="color: white; padding-right: 10px;">$</span>
+        <span class="card-content">
             {{ include.content}}
-        </div>
-    </div>
+        </span>
 </div>
 

@@ -11,10 +11,11 @@ author: M4arcu$
 > jaksd asdjasd 123123 askdj
  
 
-> [!Tip]
-> Tets
+>Tetsa `akjsdj`  asdasd *8asd*
 > s
 > asd
+{: .prompt-tip}
+
 
 ---
 

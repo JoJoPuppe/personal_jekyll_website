@@ -2,34 +2,85 @@
 layout: page
 title: "Hey M4rcu$"
 ---
-<h1>Hello, I'm Marcus.</h1>
-<div class="home-header">
+<div class="flex" style="justify-content: space-between">
+    <div class="whoami">
+        <div class="whoami-size">$ whoami</div>
+        <div class="flex" style="align-items: end">
+            <div class="marcusloeper-size">marcusloeper</div>
+            <div class="cursor" style="margin-bottom: 6px; margin-left: 6px;"></div>
+        </div>
+    </div>
+    <div>
+    </div>
+</div>
+<div class="term-box">
+    <div class="id-cmd">$ id -G -n</br>root developer infosec berlin german motion_designer father</div>
+</div>
+
+
+<div class="home-two-column">
     <!-- <div> -->
     <!--   <canvas id="myChart"></canvas> -->
     <!-- </div> -->
-    <div>
-        <h3>Hack The Box Stats</h3>
-        <div class="htb-section">
-            {% capture ranking %}
-                #{{ site.data.overview.profile.ranking }}
-            {% endcapture %}
-            {% include stats_card.html emoji="🏆" title="HTB Rank" content=ranking %}
-            {% include stats_card.html emoji="👤" title="User Owns" content=site.data.overview.profile.user_owns %}
-            {% include stats_card.html emoji="🖥️" title="System Owns" content=site.data.overview.profile.system_owns %}
-            <div class="progressbar-container">
-                <div id="progressbar">{{ site.data.overview.profile.rank_ownership }}</div>
+    <div class="w-full" style="margin-right: 1em;">
+        <h2>HackTheBox Stats</h2>
+        <div class="term-box" >
+            <div class="htb-stats" >
+                {% capture ranking %}
+                    #{{ site.data.overview.profile.ranking }}
+                {% endcapture %}
+                {% include stats_card.html emoji="🏆" title="HTB_Rank" content=ranking %}
+                {% include stats_card.html emoji="👤" title="User_Owns" content=site.data.overview.profile.user_owns %}
+                {% include stats_card.html emoji="🖥️" title="System_Owns" content=site.data.overview.profile.system_owns %}
+
+                <div style="margin-top: 1em;">
+                    <div class="">
+                        {% include stats_card.html emoji="📈" title="Rank_Progress" content="" %}
+                        <div style="margin-top: -0.6em">
+                            <span class="done">###</span><span class="open">####################</span>
+                            ...{{ site.data.overview.profile.current_rank_progress }}%
+                        </div>
+                    </div>
+                    <div class="">
+                        {% include stats_card.html emoji="👑" title="Ownership" content="" %}
+                        <div style="margin-top: -0.6em">
+                            <span class="done">###</span><span class="open">####################</span>
+                            ...{{ site.data.overview.profile.rank_ownership }}%
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="home-summary">
-        <p>I'm currently a developer aiming to transition into the information security sector.</p>
-        <p>This is my space to share notes that might not only be useful to me but also to others.</p>
-        <p>I'll write about my learnings and the topics that interest me.</p>
+    <div class="">
+        <h2>Who is this?</h2>
+        <div class="home-summary term-box">
+            I'm currently a <strong>developer</strong> aiming to transition into the <strong>information security</strong> sector.<br><br>
+            This is my space to share notes that might not only be useful to me but also to others.<br><br>
+            I'll write about my learnings and the topics that interest me.
+        </div>
+    </div>
+</div>
+<div>
+    <h2>HackTheBox Acadamy</h2>
+    <div class="term-box">
+        <div class="inner-box flex">
+            <img class="acadamy_thumb" src="{{"/images/acadamy_thumb.jpg" | relative_url }}" height="100">
+            <div>Current Path<br><span>Pentration Tester</span></div>
+            <div class="">
+                {% include stats_card.html emoji="" title="Path_Completion" content="" %}
+                <div style="margin-top: -0.6em">
+                    <span class="done">###</span><span class="open">####################</span>
+                    ...{{ site.data.overview.profile.rank_ownership }}%
+                </div>
+            </div>
+
+        </div>
     </div>
 </div>
 
 <ul>
-  {% for post in site.posts %}
+  {% for post in site.posts limit:5 %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </li>

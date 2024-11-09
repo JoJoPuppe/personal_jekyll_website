@@ -1,0 +1,67 @@
+@mixin prompt($type, $fa-content, $fa-style: 'solid', $rotate: 0) {
+  &.prompt-#{$type} {
+    background-color: var(--prompt-#{$type}-bg);
+
+    &::before {
+      content: $fa-content;
+      padding: 10px;
+
+      color: var(--prompt-#{$type}-icon-color);
+      font-family: "Martian Mono", monospace;
+      font-optical-sizing: auto;
+      font-weight: 900;
+      font-style: normal;
+
+    }
+  }
+}
+
+:root {
+  --blockquote-border-color: rgb(66, 66, 66);
+  --blockquote-text-color: #868686;
+  --prompt-text-color: rgb(216, 212, 212, 0.75);
+  --prompt-tip-bg: #073219;
+  --prompt-tip-icon-color: #18D065;
+  --prompt-tip-border-color: #18D065;
+  --prompt-info-bg: rgb(7, 59, 104, 0.8);
+  --prompt-info-icon-color: #0075d1;
+  --prompt-warning-bg: rgb(90, 69, 3, 0.88);
+  --prompt-warning-icon-color: rgb(255, 165, 0, 0.8);
+  --prompt-danger-bg: rgb(86, 28, 8, 0.8);
+  --prompt-danger-icon-color: #cd0202;
+}
+
+
+blockquote {
+  border-left: 0.125rem solid var(--blockquote-border-color);
+  padding-left: 1rem;
+  color: var(--blockquote-text-color);
+  margin-top: 0.5rem;
+
+  > p:last-child {
+    margin-bottom: 0;
+  }
+
+  &[class^='prompt-'] {
+    border-left: 0;
+    position: relative;
+    border: 2px var(--prompt-tip-border-color) solid;
+    padding: 1rem 1rem 1rem 3rem;
+    color: var(--prompt-text-color);
+
+    &::before {
+      left: 0.05rem;
+      position: absolute;
+      margin-top: -1rem;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+
+  @include prompt('tip', '💡 Tip',);
+  @include prompt('info', '\f06a');
+  @include prompt('warning', '\f06a');
+  @include prompt('danger', '\f071');
+}
+
+

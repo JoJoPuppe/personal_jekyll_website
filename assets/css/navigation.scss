@@ -8,41 +8,41 @@ body {
 }
 
 nav {
-  background-color: #faf;
+  font-family: "Martian Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  background-color: #1B1139;
   // box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
   width: 100%;
   z-index: 3;
+  height: 40px;
 }
 
 nav ul {
   margin: 0;
-  padding: 0;
+  padding: 10px;
   list-style: none;
   overflow: hidden;
-  background-color: #fff;
+
 }
 
 nav li a {
-  display: block;
-  padding: 10px 10px;
-  background-color: #fe44ca;
-  border-right: 1px solid #f4f4f4;
-  // text-decoration: none;
+  text-decoration: none;
 }
+
 
 nav li a:hover,
 nav .menu-btn:hover {
-  background-color: #f4f4f4;
+  color: #aae;
 }
 
 nav .logo {
   display: block;
   float: left;
-  font-size: 1.5em;
   padding: 10px 20px;
   text-decoration: none;
-  background-color: #0affca
 }
 
 /* menu */
