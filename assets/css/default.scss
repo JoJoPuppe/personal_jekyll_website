@@ -143,5 +143,16 @@ p > code {
 }
 
 
+.recent-posts ul {
+  list-style-type: none; /* Remove default bullets */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  width: 100%; /* Make the list take full width of the container */
+}
+.recent-posts > ul li {
+ width: 100%; /* Make each list item take the full width of the container */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
 
 

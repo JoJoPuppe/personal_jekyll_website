@@ -79,13 +79,15 @@ title: "Hey M4rcu$"
     </div>
 </div>
 
-<ul>
-  {% for post in site.posts limit:5 %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+<div class="recent-posts">
+    <ul>
+      {% for post in site.posts limit:5 %}
+        <li>
+            {% include preview_post.html title=post.title url=post.url image=post.image excerpt=post.excerpt %}
+        </li>
+      {% endfor %}
+    </ul>
+</div>
 <script>
   const progressBar = document.getElementById('progressbar');
   progressBar.style.width = progressBar.textContent + '%';
