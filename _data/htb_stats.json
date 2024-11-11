@@ -16,7 +16,7 @@
         "next_rank_points": 0.6795,
         "rank_ownership": 1.51,
         "rank_requirement": 20,
-        "ranking": 896,
+        "ranking": 886,
         "avatar": "/storage/avatars/1756dfe2baef71546d20e8a4e8d98702.png",
         "timezone": "Europe/Berlin",
         "points": 0,
@@ -26,12 +26,5 @@
         "github": null,
         "linkedin": null,
         "twitter": null
-    },
-    
-    "data": {
-        "rank": 123412,
-        "completedRoomsNumber": 133,
-        "badgesNumber": 33,
-        "topPercentage": 2
     }
 }

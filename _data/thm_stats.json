@@ -1,0 +1,25 @@
+{
+    "status": "success",
+    "data": {
+        "_id": "5e77b090aab272527725c883",
+        "id": 29138,
+        "avatar": "https://tryhackme-images.s3.amazonaws.com/user-avatars/9c7aa1bfed22d7523329b6214388d5ae.png",
+        "username": "jojopuppe",
+        "level": 12,
+        "country": "de",
+        "about": "",
+        "linkedInUsername": "",
+        "githubUsername": "",
+        "twitterUsername": "",
+        "instagramUsername": "",
+        "personalWebsite": "",
+        "subscribed": 0,
+        "badgesNumber": 16,
+        "completedRoomsNumber": 133,
+        "streak": 0,
+        "rank": 18467,
+        "topPercentage": 2,
+        "isInTopTenPercent": true,
+        "badgeImageURL": "https://tryhackme-badges.s3.amazonaws.com/jojopuppe.png"
+    }
+}
