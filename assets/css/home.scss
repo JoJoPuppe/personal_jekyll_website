@@ -50,6 +50,32 @@
 }
 
 .acadamy_thumb {
-  margin: -25px 20px -25px -25px;
+  margin: -15px 0px -15px -25px;
+  height: 100px;
+}
 
+.acadamy_current_path {
+  font-family: "Martian Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  color: #5c3fbc;
+
+}
+
+.acadamy_title {
+  font-family: "Martian Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.2rem;
+  font-variation-settings:
+    "wdth" 100;
+  color: #41F0A4;
+}
+
+.acadamy_stats {
 }

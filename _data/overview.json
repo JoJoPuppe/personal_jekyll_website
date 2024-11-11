@@ -26,5 +26,11 @@
         "github": null,
         "linkedin": null,
         "twitter": null
+    },
+    "thm_profile": {
+        ranking: 123412,
+        completed_rooms: 133,
+        badges: 33
+
     }
 }

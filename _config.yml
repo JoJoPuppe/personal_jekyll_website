@@ -2,7 +2,12 @@ markdown: kramdown
 highlighter: rouge
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
+title: "marcusloeper" # the name of your site, e.g. ACME Corp.
+paginate: 2
+paginate_path: "/blog/page:num/"
 sass:
   style: compressed
+plugins:
+  - jekyll-paginate
+
 

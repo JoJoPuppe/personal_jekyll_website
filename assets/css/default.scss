@@ -122,8 +122,20 @@ p > code {
   display: flex;
 }
 
+.bg-red {
+  background-color: red;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
 .inner-box {
-  padding: 25px;
+  padding: 15px 25px 15px 25px;
 }
 
 @keyframes blink {
