@@ -22,17 +22,25 @@ title: "Hey M4rcu$"
     <!-- <div> -->
     <!--   <canvas id="myChart"></canvas> -->
     <!-- </div> -->
+    <div class="">
+        <h2>Who is this?</h2>
+        <div class="home-summary term-box">
+            I'm currently a <strong>developer</strong> aiming to transition into the <strong>information security</strong> sector.<br><br>
+            This is my space to share notes that might not only be useful to me but also to others.<br><br>
+            I'll write about my learnings and the topics that interest me.
+        </div>
+    </div>
     <div class="w-full" style="margin-right: 1em; display: flex; flex-direction: column">
         <h2>HackTheBox Stats</h2>
         <div class="term-box" style="flex-grow: 1; display: flex" >
             <div class="htb-stats" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between">
                 <div>
                 {% capture ranking %}
-                    #{{ site.data.overview.profile.ranking }}
+                    #{{ site.data.htb_stats.profile.ranking }}
                 {% endcapture %}
                 {% include stats_card.html emoji="🏆" title="HTB_Rank" content=ranking %}
-                {% include stats_card.html emoji="👤" title="User_Owns" content=site.data.overview.profile.user_owns %}
-                {% include stats_card.html emoji="🖥️" title="System_Owns" content=site.data.overview.profile.system_owns %}
+                {% include stats_card.html emoji="👤" title="User_Owns" content=site.data.htb_stats.profile.user_owns %}
+                {% include stats_card.html emoji="🖥️" title="System_Owns" content=site.data.htb_stats.profile.system_owns %}
                 </div>
 
                 <div style="">
@@ -50,14 +58,6 @@ title: "Hey M4rcu$"
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="">
-        <h2>Who is this?</h2>
-        <div class="home-summary term-box">
-            I'm currently a <strong>developer</strong> aiming to transition into the <strong>information security</strong> sector.<br><br>
-            This is my space to share notes that might not only be useful to me but also to others.<br><br>
-            I'll write about my learnings and the topics that interest me.
         </div>
     </div>
 </div>
@@ -88,11 +88,16 @@ title: "Hey M4rcu$"
     <div class="term-box">
         <div class="inner-box flex justify-between">
                 {% capture thm_ranking %}
-                    #{{ site.data.overview.thm_profile.ranking }}
+                    #{{ site.data.thm_stats.data.rank }}
                 {% endcapture %}
-                {% include stats_card.html emoji="🏆" title="THM_Rank" content=thm_ranking %}
-                {% include stats_card.html emoji="✅" title="Cmpl_Rooms" content=site.data.overview.thm_profile.completed_rooms %}
-                {% include stats_card.html emoji="🔰" title="Badges" content=site.data.overview.thm_profile.badges %}
+                <div class="flex">
+                    {% include stats_card.html emoji="🏆" title="THM_Rank" content=thm_ranking %}
+                    <div class="top-percentage" style="color: green">
+                        top {{ site.data.thm_stats.data.topPercentage }}%
+                    </div>
+                </div>
+                {% include stats_card.html emoji="✅" title="Cmpl_Rooms" content=site.data.thm_stats.data.completedRoomsNumber %}
+                {% include stats_card.html emoji="🔰" title="Badges" content=site.data.thm_stats.data.badgesNumber %}
         </div>
     </div>
 </div>

@@ -3,5 +3,5 @@
         <div class="bar done">{{ include.done}}</div>
         <div class="bar open">{{ include.open }}</div>
     </div>
-    <div>{{ include.value }}</div>
+    <div>{{ include.value | round: 1 }}%</div>
 </div>

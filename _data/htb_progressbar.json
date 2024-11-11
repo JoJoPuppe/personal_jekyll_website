@@ -1,17 +1,1 @@
-{
-    "rank_progress": {
-        "done_hash_cnt": "",
-        "open_hash_cnt": "##############",
-        "value": "0%"
-    },
-    "ownership_progress": {
-        "done_hash_cnt": "#",
-        "open_hash_cnt": "#############",
-        "value": "1.5%"
-    },
-    "acadamy_progress": {
-        "done_hash_cnt": "#",
-        "open_hash_cnt": "#############",
-        "value": "7.5%"
-    }
-}
+{"rank_progress": {"done_hash_cnt": "", "open_hash_cnt": "#########################", "value": 0}, "ownership_progress": {"done_hash_cnt": "#", "open_hash_cnt": "########################", "value": 1.51}, "acadamy_progress": {"done_hash_cnt": "#######################", "open_hash_cnt": "##", "value": 88.8%}}

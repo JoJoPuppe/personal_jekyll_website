@@ -1,6 +1,7 @@
 .home-two-column {
   justify-content: space-between;
-  display: flex;
+  flex-direction: row-reverse;
+  display: auto;
 }
 
 .home-summary {
@@ -78,4 +79,32 @@
 }
 
 .acadamy_stats {
+  width: 330px;
 }
+
+.top-percentage {
+  font-family: "Martian Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.8rem;
+  letter-spacing: -1px;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+@media (min-width: 36em) {
+  .id-cmd {
+    text-wrap: wrap;
+  }
+  .content {
+    width: 800px;
+    min-width: 800px;
+
+  }
+  .home-two-column {
+    display: flex;
+  }
+
+}
+
