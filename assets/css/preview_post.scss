@@ -13,6 +13,7 @@
 }
 
 .preview_image {
+  width: 80px;
 
 }
 
@@ -60,5 +61,9 @@
     "wdth" 87.5;
   color: #445;
 
+
+}
+
+@media (min-width: 48em) {
 
 }

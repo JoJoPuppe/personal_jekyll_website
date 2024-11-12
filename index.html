@@ -64,10 +64,10 @@ title: "Hey M4rcu$"
 <div>
     <h2>HackTheBox Acadamy</h2>
     <div class="term-box">
-        <div class="inner-box flex">
+        <div class="acadamy-container inner-box flex">
             <img class="acadamy_thumb" src="{{"/images/acadamy_thumb.jpg" | relative_url }}">
-            <div class="flex items-center" style="justify-content: space-around; flex-grow: 1">
-                <div style="width: 200px">
+            <div class="acadamy-status flex items-center" style="justify-content: space-around; flex-grow: 1">
+                <div style="width: 200px; display: flex; flex-direction: column">
                     <div class="acadamy_current_path">Current Path</div>
                     <div class="acadamy_title">Penetration Tester</div>
                 </div>
@@ -83,10 +83,10 @@ title: "Hey M4rcu$"
     </div>
 </div>
 
-<div class="thm-stats">
+<div class="">
     <h2>TryHackMe Stats</h2>
     <div class="term-box">
-        <div class="inner-box flex justify-between">
+        <div class="inner-box thm-stats">
                 {% capture thm_ranking %}
                     #{{ site.data.thm_stats.data.rank }}
                 {% endcapture %}
